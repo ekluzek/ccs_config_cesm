@@ -518,6 +518,13 @@
     <mask>gx1v7</mask>
   </model_grid>
 
+  <model_grid alias="f09_t232_rHDMAlk">
+    <grid name="atm">0.9x1.25</grid>
+    <grid name="lnd">0.9x1.25</grid>
+    <grid name="ocnice">tx2_3v2</grid>
+    <grid name="rof">HDMA_lake_mz</grid>
+  </model_grid>
+
   <model_grid alias="f09_n13">
     <grid name="atm">0.9x1.25</grid>
     <grid name="lnd">0.9x1.25</grid>
