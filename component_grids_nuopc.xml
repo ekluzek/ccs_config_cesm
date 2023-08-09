@@ -19,7 +19,7 @@
 
   <domain name="360x720cru">
     <nx>720</nx> <ny>360</ny>
-    <mesh>$DIN_LOC_ROOT/share/meshes/360x720_120830_ESMFmesh_c20210507.nc</mesh>
+    <mesh>$DIN_LOC_ROOT/share/meshes/360x720_120830_ESMFmesh_c20210507_cdf5.nc</mesh>
     <desc>Exact half-degree CRUNCEP datm forcing grid with CRUNCEP land-mask -- only valid for DATM/CLM compset</desc>
   </domain>
   <domain name="5x5_amazon">
@@ -426,7 +426,7 @@
     <nx>2996635</nx> <ny>1</ny>
     <!-- The full mesh for MERIT-Hydro does not work with ESMF so we only have the simplified mesh -->
     <!-- This is a simplified mesh that only includes the polygon centers, so requires a mapping file with it -->
-    <mesh>$DIN_LOC_ROOT/rof/mizuRoute/meshes/polygon_centroid/MERITmz_global_ctrcrd_sqr_cdf5_ESMFmesh_c20210113.nc</mesh>
+    <mesh>$DIN_LOC_ROOT/rof/mizuRoute/meshes/polygon_centroid/MERITmz_global_ctrcrd_sqr_cdf5_ESMFmesh_c20230510.nc</mesh>
     <desc>MERITmz (MERIT-Hydro) is a higher resolution global river routing grid for mizuRoute:</desc>
   </domain>
   <domain name="HDMAmz_amazon">
