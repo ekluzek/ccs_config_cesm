@@ -91,6 +91,13 @@
   </domain>
 
   <!-- CAM/SE meshes -->
+  <domain name="ne3np4">
+    <nx>488</nx> <ny>1</ny>
+    <!-- This is needed for PTS_MODE - it specifies the xml variable PTS_DOMAINFILE -->
+    <file>$DIN_LOC_ROOT/share/domains/domain.lnd.ne3np4_gx3v7.230718.nc</file>
+    <mesh>$DIN_LOC_ROOT/share/meshes/ne3np4_ESMFmesh_c230714_cdf5.nc</mesh>
+    <desc>ne3np4 is Spectral Elem 10-deg grid:</desc>
+  </domain>
   <domain name="ne3np4.pg3">
     <nx>486</nx> <ny>1</ny>
     <mesh>$DIN_LOC_ROOT/share/meshes/ne3pg3_ESMFmesh_c221214_cdf5.nc</mesh>
@@ -240,6 +247,13 @@
     <nx>152390</nx> <ny>1</ny>
     <mesh>$DIN_LOC_ROOT/share/meshes/ne0ARCTICGRISne30x8_ESMFmesh_c20200730.nc</mesh>
     <desc>ne0np4.ARCTICGRIS.ne30x8 is a Spectral Elem 1-deg grid with a 1/8 deg refined region over Greenland:</desc>
+    <support>Test support only</support>
+  </domain>
+
+  <domain name="ne0np4.POLARCAP.ne30x4">
+    <nx>186194</nx> <ny>1</ny>
+    <mesh>$DIN_LOC_ROOT/share/meshes/POLARCAP_ne30x4_np4_ESMFmesh_cdf5_c20240222.nc</mesh>
+    <desc>ne0np4.POLARCAP.ne30x4 is a Spectral Elem 1-deg grid with a 1/4 deg refined region over the Arctic and Antarctica:</desc>
     <support>Test support only</support>
   </domain>
 
@@ -518,6 +532,12 @@
     <desc>WW3 90 x 50 global grid</desc>
     <support>For testing of the WAV model</support>
   </domain>
+  <domain name="wgx3v7">
+    <nx>100</nx>  <ny>116</ny>
+    <mesh>$DIN_LOC_ROOT/share/meshes/wgx3v7_2301208_ESMFmesh.nc</mesh>
+    <desc>gx3v7 global grid</desc>
+    <support>For testing of the WAV model</support>
+  </domain>
   <domain name="wtx0.66v1">
     <nx>540</nx> <ny>458</ny>
     <mesh>$DIN_LOC_ROOT/share/meshes/wtx0.66v1_210917_ESMFmesh.nc</mesh>
@@ -551,7 +571,12 @@
   <domain name="1x1_smallvilleIA">
     <lat>40.6878</lat>
     <lon>267.0228</lon>
-    <desc>1x1 Smallville Iowa Crop Test Case -- only valid for DATM/CLM compset</desc>
+    <desc>1x1 Smallville Iowa Crop Test Case w/ synthetic land data -- only valid for DATM/CLM compset</desc>
+  </domain>
+  <domain name="1x1_cidadinhoBR">
+    <lat>-12.9952</lat>
+    <lon>305.3233</lon>
+    <desc>1x1 Cidadinho ("Smallville") Brazil Crop Test Case w/ synthetic land data -- only valid for DATM/CLM compset</desc>
   </domain>
   <domain name="1x1_camdenNJ">
     <lat>40.0</lat>
