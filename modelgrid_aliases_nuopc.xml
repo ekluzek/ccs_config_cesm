@@ -113,7 +113,7 @@
     <mask>5x5_amazon</mask>
   </model_grid>
 
-    <model_grid alias="5x5_amazon_r05" compset="DATM.+CLM.+MIZUROUTE" not_compset="_MOM">
+  <model_grid alias="5x5_amazon_rHDMA" compset="DATM.+CLM.+MIZUROUTE" not_compset="_MOM">
     <grid name="atm">5x5_amazon</grid>
     <grid name="lnd">5x5_amazon</grid>
     <grid name="rof">HDMAmz_amazon</grid>
@@ -130,7 +130,7 @@
     <mask>0.125nldas2</mask>
   </model_grid>
 
-  <model_grid  <model_grid alias="5x5_amazon_r05" compset="DATM.+CLM.+MIZUROUTE" not_compset="_MOM">
+  <model_grid alias="nldas2_nldas2_rUSGS_mnldas2" compset="DATM.+CLM.+MIZUROUTE" not_compset="_MOM">
     <grid name="atm">0.125nldas2</grid>
     <grid name="lnd">0.125nldas2</grid>
     <grid name="ocnice">0.125nldas2</grid>
@@ -138,7 +138,7 @@
     <mask>0.125nldas2</mask>
   </model_grid>
 
-  <model_grid  <model_grid alias="5x5_amazon_r05" compset="DATM.+CLM.+MIZUROUTE" not_compset="_MOM">
+  <model_grid alias="nldas2_nldas2_rHDMA_mnldas2" compset="DATM.+CLM.+MIZUROUTE" not_compset="_MOM">
     <grid name="atm">0.125nldas2</grid>
     <grid name="lnd">0.125nldas2</grid>
     <grid name="ocnice">0.125nldas2</grid>
@@ -146,7 +146,7 @@
     <mask>0.125nldas2</mask>
   </model_grid>
 
-  <model_grid   <model_grid alias="5x5_amazon_r05" compset="DATM.+CLM.+MIZUROUTE" not_compset="_MOM">
+  <model_grid alias="nldas2_nldas2_rMERIT_mnldas2" compset="DATM.+CLM.+MIZUROUTE" not_compset="_MOM">
     <grid name="atm">0.125nldas2</grid>
     <grid name="lnd">0.125nldas2</grid>
     <grid name="ocnice">0.125nldas2</grid>
