@@ -29,7 +29,11 @@ set(SUPPORTS_CXX "TRUE")
 
 message("C compiler version is ${CMAKE_C_COMPILER_VERSION}")
 message("Fortran compiler version is ${CMAKE_Fortran_COMPILER_VERSION}")
-if (CMAKE_Fortran_COMPILER_VERSION VERSION_GREATER_EQUAL 10)
+# Note that we use the gfortran 10+ behavior if CMAKE_Fortran_COMPILER_VERSION is
+# undefined. This is needed for the unit test build, where the Macros file is often
+# included before the "project" line (which is the point at which
+# CMAKE_Fortran_COMPILER_VERSION becomes defined).
+if (CMAKE_Fortran_COMPILER_VERSION VERSION_GREATER_EQUAL 10 OR NOT DEFINED CMAKE_Fortran_COMPILER_VERSION)
   string(APPEND FFLAGS " -fallow-argument-mismatch  -fallow-invalid-boz ")
   if (DEBUG)
     string(APPEND CFLAGS " -g -Wall -O0 -g -fbacktrace -ffpe-trap=invalid,zero,overflow -fcheck=bounds")
@@ -44,7 +48,7 @@ else()
   endif()
 endif()
 if (NOT DEBUG)
-  string(APPEND CFLAGS " -O")
-  string(APPEND CXXFLAGS " -O")
-  string(APPEND FFLAGS " -O")
+  string(APPEND CFLAGS " -O2 -ffp-contract=off")
+  string(APPEND CXXFLAGS " -O2 -ffp-contract=off")
+  string(APPEND FFLAGS " -O2 -ffp-contract=off")
 endif()
